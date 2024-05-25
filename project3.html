@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Personal Portfolio</title>
+  <meta name="title" content="Personal Portfolio">
+  <meta name="description" content="">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/font/font.css">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.png">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="84" height="40" alt="logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="100" height="100" alt="logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About Me</a>
+          </li>
+
+          <li>
+            <a href="#project" class="navbar-link" data-nav-link>Projects</a>
+          </li>
+
+          <li>
+            <a href="#index.html" class="navbar-link" data-nav-link>Contact Me</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#index.html" class="btn btn:hover">
+        <span class="span">Contact Me</span>
+
+        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+      </a>
+
+      <button class="nav-open-btn btn:hover" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="video-container">
+      <h1 class="hero-text text-center">
+        
+      </h1>
+
+    </div>
+  </main>
+<section class="section about" aria-label="about-me" id="about">
+        <div class="container">
+
+          <div class="tab-container">
+
+
+            <div class="tab-content active" data-tab-content="about">
+              <div class="grid-list">
+
+                <video class="video-small" controls>
+                  <source src="/assets/images/aiarticle.mp4" type="video/mp4">
+                  your browser doesnt support.
+                </video>
+
+                <div class="about-content">
+
+                  <h2 class="h4 title section-title">
+                    Description:
+                  </h2>
+
+                  <p class="section-text">
+                    For this AI-powered article summarizer website, I crafted a modern, user-friendly web application leveraging React, Tailwind CSS, Vite, and the Redux Toolkit 
+                    for state management. I utilized the power of RapidAPI’s article extraction and summarization endpoint to fetch and display concise article summaries dynamically.
+                     The React components strung together the application's structure with conditional rendering to handle states like loading, success, and error efficiently. 
+                     Tailwind CSS facilitated a sleek and responsive design, made evident by the fluid grid and elegant radial gradients. With Vite at the helm, the developer 
+                     experience was notably fast, enhancing the speed of iterations. I also integrated robust error handling and localStorage for a persistent user history,
+                    ensuring a seamless and practical utility for summarizing articles at a glance.
+                  </p>
+
+
+
+                </div>
+
+              </div>
+            </div>
+
+            <!--
+              Tab Contents
+            -->
+
+            <div class="tab-content" data-tab-content="skillset">
+              <div class="grid-list">
+
+                <div class="skill-content">
+
+                  <h3 class="h4 title section-title">
+                    Proud to be self-taught
+                  </h3>
+
+                  <p class="section-text">
+                    Constantly looking for opportunities to strengthen my current skills and develop new ones. Currently seeking courses in back-end development.
+                  </p>
+
+                  
+
+                  <ul class="skill-list">
+
+                    
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Back-end Programming [Java, Python, Node.Js]</span>
+
+                        <span class="value">65%</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 65%"></div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Front-end Programming [JavaScript, CSS, HTML] </span>
+
+                        <span class="value">75%</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Mathematics [Calculus, Discrete Mathematics]</span>
+
+                        <span class="value">80%</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Design UI & UX [Figma, Photoshop, Cinema4D]</span>
+
+                        <span class="value">90%</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%"></div>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+      </section>
+
+</body>
